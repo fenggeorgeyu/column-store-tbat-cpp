@@ -9,7 +9,7 @@ TARGET =
 $(TARGET):	$(OBJS)
 	$(CXX) -o $(TARGET) $(OBJS) $(LIBS)
 
-all:	$(TARGET)
+all: test_hello
 
 test_hello: test1/test_hello.cpp
 	$(CXX) -o test1/test_hello test1/test_hello.cpp
