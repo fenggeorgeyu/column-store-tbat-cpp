@@ -12,7 +12,8 @@ $(TARGET):	$(OBJS)
 all: test_hello
 
 test_hello: test1/test_hello.cpp
-	$(CXX) -o test1/test_hello test1/test_hello.cpp
+	$(CXX) -o test1/test_hello.o test1/test_hello.cpp
 
 clean:
 	rm -f $(OBJS) $(TARGET)
+
